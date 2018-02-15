@@ -1,0 +1,30 @@
+{
+  "name": "skeleton-pug-sass",
+  "description": "Project Dependencies",
+  "main": "gulpfile.js",
+  "authors": [
+    "Rodan Luzuriaga"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.0.0"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "**/*.min.css",
+        "**/fonts/*.*",
+        "**/dist/js/*.min.js"
+      ]
+    }
+  }
+}

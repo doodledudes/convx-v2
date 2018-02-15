@@ -1,0 +1,40 @@
+header.fixed-top
+  .container
+    nav.navbar.navbar-dark
+      a.navbar-brand(href='index.html')
+        //- img(src="assets/images/logo-cvx.png")
+        | ConvX
+      //- a
+      .mobile-nav
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarToggleExternalContent', aria-controls='navbarToggleExternalContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        //- button
+      //- mobile-nav
+    //- nav
+    #navbarToggleExternalContent.collapse
+      .wrap.rounded-bottom
+        ul
+          li
+            a(href="") For Conveyancers
+          //- li
+          li
+            a(href="") For Real Estate Agents
+          //- li
+          li.dropdown-divider
+          li
+            a(href="signup.html")
+              i.fas.fa-user-plus
+              | Sign up
+            //- a
+          //- li
+          li
+            a(href="signin.html")
+              i.fas.fa-lock-open
+              | Login
+            //- a
+          //- li
+        //- ul
+      //- div
+    //- collapse
+  //- container
+//- header
