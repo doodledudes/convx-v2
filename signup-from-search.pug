@@ -4,8 +4,58 @@ block content
   
   section.body
     
+    article.container
+      h5.page-title Property Summary
+      .card
+        .card-body
+          .row
+            .col-md-4.text-center
+              img.property-d-img(src='assets/images/img-map.png', alt='', width="350")
+              .clearfix.d-xs-block.d-sm-block.d-md-none
+                br
+              //- clearfix
+            //- col
+            .col-md-8
+              a(href="")
+                h5.mt-0 47 Ashburnton Avenue South Turramurra, NSW 2074
+              //- a
+              | 4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE
+              .clearfix
+                br
+              //- clearfix
+              .row
+                .col-4
+                  img.img-fluid(src='//via.placeholder.com/150x100', alt='', width="350")
+                //- col
+                .col-4
+                  img.img-fluid(src='//via.placeholder.com/150x100', alt='', width="350")
+                //- col
+                .col-4
+                  img.img-fluid(src='//via.placeholder.com/150x100', alt='', width="350")
+                //- col
+              //- row
+            //- col
+          //- row
+        //- card-body
+      //- card
+    //- article
+    br
+    br
+    article.container.signup-user-role
+      h5.page-title I am a
+      .custom-control.custom-radio.custom-control-inline
+        input#customRadioInline1.custom-control-input(type='radio', name='customRadioInline1', checked)
+        label.custom-control-label(for='customRadioInline1') Buyer
+      //- custom-control
+      .custom-control.custom-radio.custom-control-inline
+        input#customRadioInline2.custom-control-input(type='radio', name='customRadioInline1')
+        label.custom-control-label(for='customRadioInline2') Seller
+      //- custom-control
+    //- article
+    br
+    br
     article.container.signup-social
-      h3.page-title Sign up
+      h5.page-title Sign up
       .card
         .card-body
           .row
@@ -43,15 +93,6 @@ block content
                   //- form-group
                 //- col
               //- row
-              .custom-control.custom-checkbox
-                input#customCheck1.custom-control-input(type='checkbox')
-                label.custom-control-label(for='customCheck1') I have read and accept Terms and Conditions
-              //- custom-control
-              hr
-              .text-right
-                a.btn.btn-default(href="") Cancel
-                a.btn.btn-danger(href="") Register
-              //- text-right
               .clearfix.d-xs-block.d-sm-block.d-md-none
                 hr
               //- clearfix
@@ -69,6 +110,19 @@ block content
           //- row
         //- card-body
       //- card
+      br
+      .custom-control.custom-checkbox.float-right
+        input#customCheck1.custom-control-input(type='checkbox')
+        label.custom-control-label(for='customCheck1') I have read and accept Terms and Conditions
+      //- custom-control
+      .clearfix
+        br
+        br
+      //- clearfix
+      .text-right
+        a.btn.btn-default(href="") Cancel
+        a.btn.btn-danger(href="") Register
+      //- text-right
     //- article
     
   //- section

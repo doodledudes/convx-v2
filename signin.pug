@@ -7,7 +7,6 @@ block content
     article.container.signup-social
       .col-login
         h3.page-title Sign in
-        br
         .card
           .card-body
             .form-group
@@ -17,13 +16,12 @@ block content
               input.form-control(type="password", placeholder="Password")
             //- form-group
             .text-center
-              a.btn.btn-info(href="signup.html") Sign up
-              | &nbsp;
-              a.btn.btn-success(href="signin.html") Sign in
+              a.btn.btn-danger(href="signup.html") Sign up
+              a.btn.btn-default(href="signin.html") Sign in
             //- text-center
             hr
             .text-center
-              a(href="") Forgot password?
+              a.text-danger(href="") Forgot password?
             //- text-center
           //- card-body
         //- card

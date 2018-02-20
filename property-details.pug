@@ -1,0 +1,72 @@
+extends ./layout/_layout.pug
+
+block content
+  
+  section.body
+    
+    article.container
+      h3.page-title Property Details
+      .card
+        .card-body
+          .row
+            .col-md-5.text-center
+              img.property-d-img(src='assets/images/img-map.png', alt='', width="350")
+              .clearfix.d-xs-block.d-sm-block.d-md-none
+                br
+              //- clearfix
+            //- col
+            .col-md-7
+              a(href="")
+                h5.mt-0 47 Ashburnton Avenue South Turramurra, NSW 2074
+              //- a
+              | 4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE
+              .clearfix
+                br
+              //- clearfix
+              .row
+                .col-4
+                  img.img-fluid(src='//via.placeholder.com/150x100', alt='', width="350")
+                //- col
+                .col-4
+                  img.img-fluid(src='//via.placeholder.com/150x100', alt='', width="350")
+                //- col
+                .col-4
+                  img.img-fluid(src='//via.placeholder.com/150x100', alt='', width="350")
+                //- col
+              //- row
+              br
+              a.btn.btn-danger.btn-block.btn-lg(href="signup-from-search.html") This is it
+            //- col
+          //- row
+        //- card-body
+      //- card
+    //- article
+    
+  //- section
+
+block scripts
+  script(src="//platform.linkedin.com/in.js").
+    api_key: "7762qdzr8qe7db"
+    authorize: true
+    onLoad: onLinkedInLoad
+  //- script
+  script.
+    // Setup an event listener to make an API call once auth is complete
+    function onLinkedInLoad() {
+        IN.Event.on(IN, "auth", getProfileData);
+    }
+
+    // Handle the successful return from the API call
+    function onSuccess(data) {
+        console.log(data);
+    }
+
+    // Handle an error response from the API call
+    function onError(error) {
+        console.log(error);
+    }
+
+    // Use the API call wrapper to request the member's basic profile data
+    function getProfileData() {
+        IN.API.Raw("/people/~").result(onSuccess).error(onError);
+    }

@@ -1,0 +1,74 @@
+extends ./layout/_layout.pug
+
+block content
+  
+  section.body
+    
+    article.container
+      h3.page-title Property / Cost Selection
+      .card
+        .card-body
+          .selection.rounded-bottom
+            .media
+              img.mr-3.rounded-circle(src='//via.placeholder.com/150', alt='', width="50")
+              .media-body
+                a(href="")
+                  h5.mt-0 47 Ashburnton Avenue South Turramurra, NSW 2074
+                //- a
+                | 4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE
+              //- media-body
+              a.button.btn.btn-default(href="property-details.html") View
+            //- media
+            .media
+              img.mr-3.rounded-circle(src='//via.placeholder.com/150', alt='', width="50")
+              .media-body
+                a(href="")
+                  h5.mt-0 56 Ashton Rosemary, Queensland
+                //- a
+                | 4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE
+              //- media-body
+              a.button.btn.btn-default(href="property-details.html") View
+            //- media
+            .media
+              img.mr-3.rounded-circle(src='//via.placeholder.com/150', alt='', width="50")
+              .media-body
+                a(href="")
+                  h5.mt-0 32 Ashburnton NSW 2074
+                //- a
+                | 4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE
+              //- media-body
+              a.button.btn.btn-default(href="property-details.html") View
+            //- media
+          //- selection
+        //- card-body
+      //- card
+    //- article
+    
+  //- section
+
+block scripts
+  script(src="//platform.linkedin.com/in.js").
+    api_key: "7762qdzr8qe7db"
+    authorize: true
+    onLoad: onLinkedInLoad
+  //- script
+  script.
+    // Setup an event listener to make an API call once auth is complete
+    function onLinkedInLoad() {
+        IN.Event.on(IN, "auth", getProfileData);
+    }
+
+    // Handle the successful return from the API call
+    function onSuccess(data) {
+        console.log(data);
+    }
+
+    // Handle an error response from the API call
+    function onError(error) {
+        console.log(error);
+    }
+
+    // Use the API call wrapper to request the member's basic profile data
+    function getProfileData() {
+        IN.API.Raw("/people/~").result(onSuccess).error(onError);
+    }
