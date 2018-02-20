@@ -42,14 +42,16 @@ block content
     br
     br
     article.container.signup-user-role
-      h5.page-title I am a
       .custom-control.custom-radio.custom-control-inline
         input#customRadioInline1.custom-control-input(type='radio', name='customRadioInline1', checked)
-        label.custom-control-label(for='customRadioInline1') Buyer
+        label.custom-control-label(for='customRadioInline1') I am buying this property
       //- custom-control
+      .clearfix.d-xs-block.d-sm-block.d-md-none
+        br
+      //- clearfix
       .custom-control.custom-radio.custom-control-inline
         input#customRadioInline2.custom-control-input(type='radio', name='customRadioInline1')
-        label.custom-control-label(for='customRadioInline2') Seller
+        label.custom-control-label(for='customRadioInline2')  I am selling the property
       //- custom-control
     //- article
     br
@@ -121,7 +123,7 @@ block content
       //- clearfix
       .text-right
         a.btn.btn-default(href="") Cancel
-        a.btn.btn-danger(href="") Register
+        a.btn.btn-danger(href="dashboard-customer.html") Register
       //- text-right
     //- article
     

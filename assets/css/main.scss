@@ -421,11 +421,36 @@ section {
 .rounded {
   border-radius: 2px !important;
 }
+.nav-pills {
+  & {
+    border: 1px solid #e9ecef;
+    border-radius: 3px;
+  }
+}
+.nav-pills .nav-link {
+  & {
+    border-radius: 0;
+  }
+  &:not(.disabled) {
+    color: #171a1d;
+    background: #e9ecef;
+  }
+  &.active {
+    background: #dd2e2c;
+    color: white;
+    outline: 1px solid #e9ecef;
+  }
+}
 .form-control {
   background-color: #e9ecef;
 }
 .btn {
   margin: 0 5px;
+}
+.btn-group {
+  .btn {
+    margin: 0;
+  }
 }
 .btn-default {
   border: 1px solid #dc3545;
@@ -441,4 +466,18 @@ section {
   &:hover {
     background-color: lighten(#dd2e2c, 5%);
   }
+}
+.navbar-nav {
+  li {
+    a.nav-link {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+table:last-child {
+  margin-bottom: 0;
+}
+p:last-child {
+  margin-bottom: 0;
 }

@@ -1,0 +1,223 @@
+extends ./layout/_layout-customer.pug
+
+block content
+  
+  section.admin
+    .container
+      h3 New Transaction
+      ul.nav.nav-pills.nav-fill
+        li.nav-item
+          a.nav-link.active(href='#tabSearchProperty', data-toggle="tab") Search a Property
+        //- li
+        li.nav-item
+          a.nav-link(href='#tabSelectProperty', data-toggle="tab") Select Property
+        //- li
+        li.nav-item
+          a.nav-link(href='#tabReviewDetails', data-toggle="tab") Review Details
+        //- li
+        li.nav-item
+          a.nav-link(href='#tabCompleteTransaction', data-toggle="tab") Complete Transaction
+        //- li
+      //- ul
+      br
+      #tabTransaction.tab-content
+        #tabSearchProperty.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+          .form
+            .form-group.rounded
+              //- label.rounded-top Search a property
+              .input-search
+                input.form-control.form-control-lg(type="text", placeholder="Enter your property address to get started...")
+                a(href="selection.html")
+                  i.fas.fa-search
+                //- a
+              //- input-search
+            //- form-group
+            .search-result.rounded-bottom
+              .media
+                img.mr-3.rounded-circle(src='//via.placeholder.com/150', alt='', width="50")
+                .media-body
+                  a(href="")
+                    h5.mt-0 47 Ashburnton Avenue South Turramurra, NSW 2074
+                  //- a
+                  | 4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE
+                //- media-body
+              //- media
+              .media
+                img.mr-3.rounded-circle(src='//via.placeholder.com/150', alt='', width="50")
+                .media-body
+                  a(href="")
+                    h5.mt-0 56 Ashton Rosemary, Queensland
+                  //- a
+                  | 4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE
+                //- media-body
+              //- media
+              .media
+                img.mr-3.rounded-circle(src='//via.placeholder.com/150', alt='', width="50")
+                .media-body
+                  a(href="")
+                    h5.mt-0 32 Ashburnton NSW 2074
+                  //- a
+                  | 4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE
+                //- media-body
+              //- media
+            //- search-result
+          //- form
+        //- tab-pane
+        #tabSelectProperty.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+          a(href='#')
+            i.fas.fa-chevron-left.mr-2
+            | Previous Step
+          //- a
+          .clearfix
+            br
+          //- clearfix
+          .card
+            .card-body
+              .text-muted Showing results for "Ash"
+              br
+              .selection.rounded-bottom
+                .media
+                  img.mr-3.rounded-circle(src='//via.placeholder.com/150', alt='', width="50")
+                  .media-body
+                    a(href="")
+                      h5.mt-0 47 Ashburnton Avenue South Turramurra, NSW 2074
+                    //- a
+                    | 4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE
+                  //- media-body
+                  a.button.btn.btn-default(href="property-details.html") View
+                //- media
+                .media
+                  img.mr-3.rounded-circle(src='//via.placeholder.com/150', alt='', width="50")
+                  .media-body
+                    a(href="")
+                      h5.mt-0 56 Ashton Rosemary, Queensland
+                    //- a
+                    | 4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE
+                  //- media-body
+                  a.button.btn.btn-default(href="property-details.html") View
+                //- media
+                .media
+                  img.mr-3.rounded-circle(src='//via.placeholder.com/150', alt='', width="50")
+                  .media-body
+                    a(href="")
+                      h5.mt-0 32 Ashburnton NSW 2074
+                    //- a
+                    | 4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE
+                  //- media-body
+                  a.button.btn.btn-default(href="property-details.html") View
+                //- media
+              //- selection
+            //- card-body
+          //- card
+        //- tab-pane
+        #tabReviewDetails.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+          a(href='#')
+            i.fas.fa-chevron-left.mr-2
+            | Previous Step
+          //- a
+          .clearfix
+            br
+          //- clearfix
+          .card
+            .card-body
+              .row
+                .col-md-5.text-center
+                  img.property-d-img(src='assets/images/img-map.png', alt='', width="350")
+                  .clearfix.d-xs-block.d-sm-block.d-md-none
+                    br
+                  //- clearfix
+                //- col
+                .col-md-7
+                  a(href="")
+                    h5.mt-0 47 Ashburnton Avenue South Turramurra, NSW 2074
+                  //- a
+                  | 4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE
+                  .clearfix
+                    br
+                  //- clearfix
+                  .row
+                    .col-4
+                      img.img-fluid(src='//via.placeholder.com/150x100', alt='', width="350")
+                    //- col
+                    .col-4
+                      img.img-fluid(src='//via.placeholder.com/150x100', alt='', width="350")
+                    //- col
+                    .col-4
+                      img.img-fluid(src='//via.placeholder.com/150x100', alt='', width="350")
+                    //- col
+                  //- row
+                  br
+                  a.btn.btn-danger.btn-block(href="signup-from-search.html") This is it
+                //- col
+              //- row
+            //- card-body
+          //- card
+        //- tab-pane
+        #tabCompleteTransaction.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+          a(href='#')
+            i.fas.fa-chevron-left.mr-2
+            | Previous Step
+          //- a
+          .clearfix
+            br
+          //- clearfix
+          .card
+            .card-body
+              h5 Property Summary
+              .row
+                .col-md-4.text-center
+                  img.property-d-img(src='assets/images/img-map.png', alt='', width="350")
+                  .clearfix.d-xs-block.d-sm-block.d-md-none
+                    br
+                  //- clearfix
+                //- col
+                .col-md-8
+                  a(href="")
+                    h5.mt-0 47 Ashburnton Avenue South Turramurra, NSW 2074
+                  //- a
+                  | 4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE
+                  .clearfix
+                    br
+                  //- clearfix
+                  .row
+                    .col-4
+                      img.img-fluid(src='//via.placeholder.com/150x100', alt='', width="350")
+                    //- col
+                    .col-4
+                      img.img-fluid(src='//via.placeholder.com/150x100', alt='', width="350")
+                    //- col
+                    .col-4
+                      img.img-fluid(src='//via.placeholder.com/150x100', alt='', width="350")
+                    //- col
+                  //- row
+                //- col
+              //- row
+            //- card-body
+          //- card
+          br
+          br
+          article.container.signup-user-role
+            .custom-control.custom-radio.custom-control-inline
+              input#customRadioInline1.custom-control-input(type='radio', name='customRadioInline1', checked)
+              label.custom-control-label(for='customRadioInline1') I am buying this property
+            //- custom-control
+            .clearfix.d-xs-block.d-sm-block.d-md-none
+              br
+            //- clearfix
+            .custom-control.custom-radio.custom-control-inline
+              input#customRadioInline2.custom-control-input(type='radio', name='customRadioInline1')
+              label.custom-control-label(for='customRadioInline2')  I am selling the property
+            //- custom-control
+          //- article
+          br
+          hr
+          .text-right
+            a.btn.btn-default(href="") Cancel
+            a.btn.btn-danger(href="loading.html") Submit
+          //- text-right
+        //- tab-pane
+      //- tab-content
+    //- .container
+  //- section
+
+//- block content

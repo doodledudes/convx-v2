@@ -1,0 +1,76 @@
+extends ./layout/_layout-customer.pug
+
+block content
+  
+  section.admin
+    .container
+      h3 Your Dashboard
+      .card
+        .card-body
+          a.float-md-right(href="") View All
+          p.lead Recent Notifications
+          .table-responsive
+            table.table.table-sm
+              tbody
+                tr
+                  td Aravind Naidu has Approved Aura 24 on Preliminary stage
+                  td Feb 4, 2018 - 8:00:66 AM
+                //- tr
+                tr
+                  td Nick  Stanley has Opened 47 Ashburn on Contract stage
+                  td Feb 4, 2018 - 8:00:67 AM
+                //- tr
+                tr
+                  td Contract stage is Past Due
+                  td Feb 7, 2018 - 9:15:67 AM
+                //- tr
+              //- tbody
+            //- table
+          //- table-responsive
+        //- card-body
+      //- card
+      br
+      .card
+        .card-body
+          a.float-md-right(href="customer-property-search.html")
+            i.fas.fa-search-plus.fa-2x
+          //- a
+          p.lead Property Summary
+          .row
+            .col-md-4
+              .property-preview
+                img(src="//via.placeholder.com/150x100")
+                .address 47 Ashburn
+                .progress
+                  .progress-bar.bg-danger(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                //- progress
+                .role You are the Buyer
+              //- property-preview
+            //- col
+            .col-md-4
+              .property-preview
+                img(src="//via.placeholder.com/150x100")
+                .address Mercer
+                .progress
+                  .progress-bar.bg-success(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                //- progress
+                .role You are the Seller
+              //- property-preview
+            //- col
+            .col-md-4
+              .property-preview
+                img(src="//via.placeholder.com/150x100")
+                .address Aura 24
+                .progress
+                  .progress-bar.bg-success(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                //- progress
+                .role You are the Seller
+              //- property-preview
+            //- col
+          //- row
+        //- card-body
+      //- card
+    //- .container
+  //- section
+
+//- block content

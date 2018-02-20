@@ -1,0 +1,48 @@
+extends ./layout/_layout-customer.pug
+
+block content
+  
+  section.admin
+    .container
+      a.button.btn.btn-danger.float-right(href="property-details.html") New Transaction
+      h3 Your Properties
+      .card
+        .card-body
+          .selection.rounded-bottom
+            .media
+              img.mr-3.rounded-circle(src='//via.placeholder.com/150', alt='', width="80")
+              .media-body
+                a(href="")
+                  h5.mt-0 47 Ashburnton Avenue South Turramurra, NSW 2074
+                //- a
+                p 4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE
+                .text-danger Past Due
+              //- media-body
+            //- media
+            .media
+              img.mr-3.rounded-circle(src='//via.placeholder.com/150', alt='', width="80")
+              .media-body
+                a(href="")
+                  h5.mt-0 56 Ashton Rosemary, Queensland
+                //- a
+                p 4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE
+                .text-success On track
+              //- media-body
+            //- media
+            .media
+              img.mr-3.rounded-circle(src='//via.placeholder.com/150', alt='', width="80")
+              .media-body
+                a(href="")
+                  h5.mt-0 32 Ashburnton NSW 2074
+                //- a
+                p 4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE
+                .text-success On track
+              //- media-body
+            //- media
+          //- selection
+        //- card-body
+      //- card
+    //- .container
+  //- section
+
+//- block content

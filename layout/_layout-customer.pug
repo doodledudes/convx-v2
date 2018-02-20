@@ -1,0 +1,57 @@
+doctype html
+html(lang="en")
+  head
+    // Title block allowing child pages to override
+    title Real Conveyancers. Low Cost.
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name='google-signin-client_id', content='910157958848-1j4ipf44t04fvki2v853p9ecmkthviat.apps.googleusercontent.com')
+    link(rel="icon", type="image/png", href="assets/images/favicon.png")
+    link(href='//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700', rel='stylesheet')
+    link(href='//use.fontawesome.com/releases/v5.0.6/css/all.css', rel='stylesheet')
+    
+    //- BOWER COMPONENTS
+    // bower:css
+    // endinject
+      
+    //- APP JS
+    // inject:css
+    // endinject
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  body
+    
+    include ../includes/_aside-customer.pug
+    
+    .mobile-bar
+      .nav-toggle#navToggle
+        span
+        span
+        span
+      //- nav-toggle
+      a.logo(href='index.html')
+        img(src="assets/images/logo-red.png")
+      //- a
+    //- mobile-bar
+    
+    block content
+    
+    //- include ../includes/_footer.pug
+    
+    //- BOWER COMPONENTS
+    // bower:js
+    // endinject
+    
+    //- APP JS
+    // inject:js
+    // endinject
+
+    //- PAGE SCRIPTS
+    block scripts
