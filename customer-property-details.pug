@@ -1,0 +1,104 @@
+extends ./layout/_layout-customer.pug
+
+block content
+  
+  section.admin
+    .container
+      h3 Property Details
+      .card
+        .card-body
+          .row
+            .col-md-4
+              .timeline
+                .timeline-item.done
+                  p
+                    | Open the file
+                    br
+                    small Opened: Jan 31, 2018, 6:00:36 PM
+                    br
+                    small Closed: Feb 4, 2018, 8:00:66 AM
+                  //- p
+                //- timeline-item
+                .timeline-item.active
+                  p
+                    | Search and Check
+                    br
+                    small Opened: Feb 4, 2018, 8:00:67 PM
+                    br
+                    small In Progress: Feb 4, 2018, 6:00:36 AM
+                  //- p
+                //- timeline-item
+                .timeline-item
+                  p
+                    | Settlement Readiness
+                    br
+                    small Pending
+                  //- p
+                //- timeline-item
+                .timeline-item
+                  p
+                    | Settlement
+                    br
+                    small Pending
+                  //- p
+                //- timeline-item
+                .timeline-item
+                  p
+                    | Completed
+                    br
+                    small Pending
+                  //- p
+                //- timeline-item
+              //- timeline
+            //- col
+            .col-md-8
+              p.lead You are the Seller
+              .row
+                .col-md-4.text-center
+                  img.property-d-img(src='assets/images/img-map.png', alt='', width="350")
+                  .clearfix.d-xs-block.d-sm-block.d-md-none
+                    br
+                  //- clearfix
+                //- col
+                .col-md-8
+                  a(href="")
+                    h5.mt-0 47 Ashburnton Avenue South Turramurra, NSW 2074
+                  //- a
+                  | 4 bed / 2 Bath / 2 Car Space / 1366 m2 / HOUSE
+                //- col
+              //- row
+              br
+              .table-responsive
+                table.table.table-sm
+                  thead
+                    tr
+                      th Stage
+                      th Assignee
+                      th Last Updated Date
+                      th Status
+                    //- tr
+                  //- thead
+                  tbody
+                    tr
+                      td Preliminary
+                      td Aravind Naidu
+                      td Feb 4 2018 8:00:66
+                      td Approved
+                    //- tr
+                    tr
+                      td Contract
+                      td Nick Stanley
+                      td Feb 4 2018 8:00:67
+                      td Opened
+                    //- tr
+                  //- tbody
+                //- table
+              //- table-responsive
+            //- col
+          //- row
+        //- card-body
+      //- card
+    //- .container
+  //- section
+
+//- block content

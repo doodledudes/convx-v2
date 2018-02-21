@@ -1,0 +1,41 @@
+extends ./layout/_layout-customer.pug
+
+block content
+  
+  section.admin
+    .container
+      h3 Your Account
+      .card
+        .card-body
+          .row
+            .col-md-3
+              .admin-page-nav
+                ul
+                  li
+                    a(href="customer-account.html") Account Details
+                  //- li
+                  li
+                    a(href="customer-password-update.html") Update Password
+                  //- li
+                //- ul
+              //- admin-page-nav
+            //- col
+            .col-md-9
+              .media
+                img.mr-3(src='//via.placeholder.com/150', alt='Generic placeholder image', width="80")
+                .media-body
+                  h5.mt-0 Jeremi Serrano
+                  | jeremi.serrano@tooltwist.com
+                  br
+                  | +63 xxx xxx xxxx
+                //- media-body
+                a.btn.btn-danger.btn-sm(href="") Edit
+              //- media
+            //- col
+          //- row
+        //- card-body
+      //- card
+    //- .container
+  //- section
+
+//- block content
