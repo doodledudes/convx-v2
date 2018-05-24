@@ -15,8 +15,8 @@ var debug = require('gulp-debug');
 var changed = require('gulp-changed');
 var gutil = require('gulp-util');
 
-var root  = '../ttstatic.github.io/';
-var dir   = 'convx-v2'; // you may change this.
+var root  = './dist';
+var dir   = ''; // you may change this.
 
 var paths = {
   // This must be in the right order, so linked files are processed first.
